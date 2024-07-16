@@ -22,6 +22,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.123.0'
+          extended: true
       - name: Build Site
         run: hugo -s . --noChmod
       - name: Archive artifacts
