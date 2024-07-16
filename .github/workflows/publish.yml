@@ -29,7 +29,9 @@ jobs:
         with:
           node-version: '20'
       - run: |
-          npm install
+          npm install -D autoprefixer
+          npm install -D postcss-cli
+          npm install -D postcss
           npm ci
 
       - name: Build Site
