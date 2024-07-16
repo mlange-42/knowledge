@@ -1,0 +1,53 @@
+name: Publish
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+
+permissions: 
+  contents: write
+
+jobs:
+
+  build:
+    name: GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.123.0'
+          extended: true
+          
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: |
+          npm install -D autoprefixer
+          npm install -D postcss-cli
+          npm install -D postcss
+          npm ci
+
+      - name: Build Site
+        run: hugo
+
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: public
+          path: public
+
+      - name: Deploy to GitHub Pages
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: gh-pages
+          build_dir: public
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
