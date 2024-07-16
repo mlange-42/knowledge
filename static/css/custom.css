@@ -1,0 +1,17 @@
+
+.td-toc {
+    padding-top: 1em;
+}
+
+.td-sidebar-toc {
+    height: calc(100vh - 4rem);
+}
+
+footer {
+    min-height: 50px;
+    padding-top: 1rem !important;
+}
+
+.mb-4, .my-4 {
+	margin-bottom: 0.5rem !important;
+}

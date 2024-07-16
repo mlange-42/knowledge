@@ -1,0 +1,47 @@
+baseURL = "https://mlange-42.github.io/knowledge/"
+canonifyurls = true
+languageCode = "en-us"
+title = "OESA Knowledge"
+
+[params]
+  offlineSearch = true
+  github_repo = "https://github.com/mlange-42/knowledge"
+  github_branch = "main"
+
+[params.ui]
+  sidebar_menu_foldable = true
+
+[params.katex]
+  enable = true
+
+[params.taxonomy]
+taxonomyCloud = ["categories", "tags"]
+taxonomyCloudTitle = ["Categories", "Tags"]
+taxonomyPageHeader = ["categories", "tags"]
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+[module]
+  proxy = "direct"
+[module.hugoVersion]
+  extended = true
+  min = "0.100.0"
+[[module.imports]]
+  path = "github.com/google/docsy"
+  disable = false
+[[module.imports]]
+  path = "github.com/google/docsy/dependencies"
+  disable = false
+
+[[menu.main]]
+  name = "GitHub"
+  weight = 50
+  url = "https://github.com/mlange-42/knowledge"
+  pre = "<i class='fab fa-github'></i>"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
