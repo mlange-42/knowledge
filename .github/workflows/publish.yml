@@ -24,7 +24,7 @@ jobs:
           hugo-version: '0.123.0'
           extended: true
       - name: Build Site
-        run: hugo -s . --noChmod
+        run: hugo
       - name: Archive artifacts
         uses: actions/upload-artifact@v3
         with:
