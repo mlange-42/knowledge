@@ -1,5 +1,4 @@
 baseURL = "https://mlange-42.github.io/knowledge/"
-canonifyurls = true
 languageCode = "en-us"
 title = "OESA Knowledge"
 
