@@ -8,3 +8,4 @@ description: Welcome to the OESA Knowledge site!
 
 TODO: re-build the landing page with a clear cards layout, linking the most important entry points.
 
+A [test link](/how-to-contribute/).
