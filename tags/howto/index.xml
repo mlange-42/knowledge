@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Howto on OESA Knowledge</title>
+    <link>https://mlange-42.github.io/knowledge/tags/howto/</link>
+    <description>Recent content in Howto on OESA Knowledge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://mlange-42.github.io/knowledge/tags/howto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>template files</title>
+      <link>https://mlange-42.github.io/knowledge/how-to-contribute/templates/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://mlange-42.github.io/knowledge/how-to-contribute/templates/</guid>
+      <description>This page is a template for an _index.md file. Copy and edit as you like.&#xA;An _index.md file is the file which is displayed if a directory link was choosen.&#xA;The directory link is showed only if an _index.md is inside a directory.</description>
+    </item>
+  </channel>
+</rss>
